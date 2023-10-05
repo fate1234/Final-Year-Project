@@ -1,0 +1,79 @@
+@font-face {
+    font-family: PP mori;
+    src: url(../fonts/ppmori.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PP mori;
+    text-decoration: none;
+    color: #111;
+}
+
+*::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.cursor {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 8;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: difference;
+}
+
+.main {
+    background-color: #fff;
+    cursor: none; 
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    gap: 20px;
+}
+
+/************************************** Footer **************************************/
+
+footer {
+    height: 5vh;
+    /* Increase the height as needed */
+    width: 100%;
+    background-color: #37475A;
+    left: 0;
+    bottom: 0;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer h3 {
+    font-weight: 600;
+    font-size: 1.2vw;
+    color: white;
+}
+
+footer heart {
+    color: red;
+    bottom: 0;
+}

@@ -1,0 +1,202 @@
+/*************************************** Page1 ***************************************/
+
+.page1 {
+    width: 100%;
+    padding: 5vw 15vw;
+    height: 170vh;
+    
+}
+
+.page1-heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 10vw; */
+}
+
+.page1-heading-left {
+    font-size: 2.6vw;
+}
+
+.page1 video {
+    width: 30%;
+    margin-top: 10vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.page1-heading-left #first:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+.page1-heading-left #second:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+}
+
+/*************************************** Page2 ***************************************/
+.page2 {
+    padding-top: 40vh;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 170px;
+    height: 100vh;
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    /* padding: 170px 100px; */
+}
+
+.box {
+    /* background-color: salmon; */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.box img {
+    position: absolute;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(30%) rotate(12deg);
+}
+
+.box img:nth-child(1) {
+    left: 2%;
+}
+
+.box img:nth-child(3) {
+    right: 5%;
+}
+
+.text-div {
+    height: 16vh;
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+
+.box h1 {
+    font-size: 7.5vw;
+    font-weight: 600;
+    transition: all ease-out 0.5s;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.box:hover h1 {
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+
+.box:hover img {
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+
+/*************************************** Page3 ***************************************/
+
+.page3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top: 3vw;
+}
+
+.page3-left {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3-left video {
+    width: 80%;
+}
+
+.page3-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 30px;
+}
+
+.page3-right .button {
+    /* width: 300px;
+    height: 100px; */
+    margin-top: 60px; 
+    width: 200px;
+    height: 80px;
+    border-radius:  10px;
+    background-color: transparent;
+    color: #111;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #646FD4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3-right .button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #646FD4;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.page3-right .button:hover:before{
+    width: 100%;
+}
+
+.page3-right .button:hover{
+    color: #111;
+    cursor: none;
+}
+
+.page3-right h1 {
+    font-weight: 400;
+    font-size: 2.4vw;
+}
+
+
+
+/* For Phone */
+
+/* @media only screen and (max-width: 391px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    .center-left {
+        width: 20%;
+
+    }
+
+    .center-right {
+        width: 80%;
+    }
+
+    .center-right img {
+        height: 200px;
+        width: 200px;
+    }
+} */
